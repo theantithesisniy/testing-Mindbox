@@ -1,0 +1,61 @@
+.ToDoCardItem {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e6e6e6;
+  border-bottom: none;
+  width: 400px;
+  padding: 10px 0;
+  background-color: white;
+}
+
+.ToDoCardItem:last-child {
+  border-bottom: none;
+}
+
+.checked {
+  opacity: 0.3;
+  text-decoration: line-through;
+  color: gray;
+}
+
+.checkbox input:checked + .checkmark {
+  background-color: #fff;
+  border: 2px solid #ccc;
+}
+
+.checkbox input:checked + .checkmark:after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 4px;
+  height: 10px;
+  border: solid #4caf50;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkmark {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 5px;
+  border: 2px solid #ccc;
+}
+
+.checkbox {
+  margin-left: 10px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}

@@ -1,0 +1,46 @@
+.ToDoCardFilters {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #e6e6e6;
+  border-bottom: none;
+  width: 400px;
+  height: 30px;
+  font-size: 12px;
+  background-color: white;
+
+  .amount {
+    align-self: center;
+    opacity: 0.5;
+  }
+
+  .filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    opacity: 0.5;
+  }
+
+  .clearCompleted {
+    opacity: 0.5;
+  }
+
+  .activeFilter {
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 2px 5px;
+  }
+}
+
+.overlayEffect,
+.second__overlayEffect {
+  border: 1px solid #e6e6e6;
+  width: 390px;
+  padding: 2px;
+  background-color: white;
+
+  &.second__overlayEffect {
+    width: 385px;
+  }
+}

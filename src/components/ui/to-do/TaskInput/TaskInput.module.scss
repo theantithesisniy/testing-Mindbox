@@ -1,0 +1,40 @@
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.ToDoCard {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e6e6e6;
+  width: 400px;
+  height: 40px;
+  background-color: white;
+
+  .icon {
+    margin: 0 5px 0 10px;
+    opacity: 0.3;
+    width: 20px;
+    height: 20px;
+  }
+
+  .input {
+    font-style: italic;
+    opacity: 0.3;
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+
+    &.activeInput {
+      opacity: 1;
+    }
+  }
+
+}
